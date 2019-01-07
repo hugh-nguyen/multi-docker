@@ -10,7 +10,7 @@ script:
 
 after_success:
   - docker build -t hughnguyen/multi-client ./client
-  - docker build -t hughnguyen/mulit-nginx ./nginx
+  - docker build -t hughnguyen/multi-nginx ./nginx
   - docker build -t hughnguyen/multi-server ./server
   - docker build -t hughnguyen/multi-worker ./worker
   
